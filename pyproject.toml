@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pilaf"
+version = "0.1.0"
+description = """
+Python utility methods to make file and process operations a bit closer to \
+hell scripts\
+"""
+authors = ["Costin Caraivan <costincaraivan@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.6.*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
