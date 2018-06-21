@@ -1,4 +1,8 @@
-from pilaf import __version__
+from pathlib import Path
+from shepy import *
 
-def test_version():
-    assert __version__ == "0.1.0"
+def test_joinpath():
+    assert joinpath("/") == Path("/").resolve()
+    assert joinpath("/", "folder1") == Path("/folder1").resolve()
+    assert joinpath("/", "folder1", "folder2") == \
+        Path("/folder1/folder2").resolve()

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pilaf"
+name = "shepy"
 version = "0.1.0"
 description = """
 Python utility methods to make file and process operations a bit closer to \
