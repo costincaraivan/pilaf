@@ -17,6 +17,7 @@ def joinpath(*args):
         return Path(args[0]).resolve()
     if len(args) > 1:
         rest_of_args = args[1:]
+        #pylint: disable=E1101
         return Path(args[0]).joinpath(*rest_of_args).resolve()
 
 def mkdir(path):
